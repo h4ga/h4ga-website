@@ -56,15 +56,14 @@ a{color:inherit}
 /* Header */
 .site-header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--rule)}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
-.brand{text-decoration:none;display:flex;align-items:baseline;gap:10px}
-.brand b{font-weight:600;font-size:1.25rem;letter-spacing:-.02em}
-.brand span{color:var(--muted);font-size:.9375rem}
+.brand{display:flex;align-items:center}
+.brand img{height:34px;width:auto;display:block}
 nav ul{list-style:none;display:flex;gap:28px;align-items:center}
 nav a{text-decoration:none;font-size:.9375rem;color:var(--muted)}
 nav a:hover{color:var(--ink)}
 nav a.nav-cta{color:var(--navy);font-weight:500}
 @media (max-width:760px){
-  .brand span{display:none}
+  .brand img{height:30px}
   nav li:not(:last-child){display:none}
 }
 
@@ -156,7 +155,9 @@ h3{font-size:1.25rem;letter-spacing:-.015em;font-weight:600;line-height:1.3}
 
 /* Footer */
 footer{background:var(--ink);color:#8d96a8;font-size:.875rem;border-top:1px solid #1f2a3e}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding-top:28px;padding-bottom:28px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 24px;padding-top:32px;padding-bottom:32px}
+.foot-brand{display:flex;align-items:center;gap:20px}
+.foot-brand img{height:28px;width:auto;filter:invert(1);opacity:.85}
 footer a{color:#8d96a8;text-decoration:none}
 footer a:hover{color:#fff}
 footer nav{display:flex;gap:24px}
@@ -171,7 +172,7 @@ footer nav{display:flex;gap:24px}
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="H4 Global Advisors home"><b>H4GA</b><span>H4 Global Advisors</span></a>
+    <a class="brand" href="/"><img src="logo.png" width="400" height="171" alt="H4 Global Advisors" fetchpriority="high"></a>
     <nav aria-label="Primary">
       <ul>
         <li><a href="#services">Services</a></li>
@@ -310,7 +311,7 @@ footer nav{display:flex;gap:24px}
 
 <footer>
   <div class="wrap">
-    <span>&copy; 2026 H4 Global Advisors</span>
+    <div class="foot-brand"><img src="logo.png" width="400" height="171" alt="" loading="lazy"><span>&copy; 2026 H4 Global Advisors</span></div>
     <nav aria-label="Legal">
       <a href="https://www.linkedin.com/company/h4ga/">H4GA on LinkedIn</a>
       <a href="/privacy-policy.html">Privacy</a>
