@@ -1,445 +1,322 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <!-- Google tag (gtag.js) - deferred for performance -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXREE7L3DS" onload="gtag('js', new Date());gtag('config', 'G-WXREE7L3DS');"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>H4 Global Advisors (H4GA) | Operationalize Innovation. Deliver at Scale.</title>
-  <meta name="description" content="H4 Global Advisors (H4GA) is a technology and operations advisory firm helping organizations operationalize AI and cloud strategies at enterprise scale. We partner with C-suite leaders to drive AI transformation, cloud modernization, and operational excellence.">
-  <meta name="keywords" content="AI transformation, cloud strategy, enterprise operations, digital transformation, technology advisory, AI consulting, cloud modernization, MLOps, PMO, portfolio management, operational excellence">
-  <meta name="author" content="H4 Global Advisors">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#f8f7f4">
-  <link rel="icon" type="image/png" href="favicon-32x32.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="canonical" href="https://www.h4ga.com/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>H4 Global Advisors | AI that runs in production</title>
+<meta name="description" content="H4 Global Advisors helps mid-market leadership teams move AI from pilots into production: the right use cases, the operating model to run them, and the delivery leadership to get them live.">
+<meta name="author" content="H4 Global Advisors">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://www.h4ga.com/">
 
-  <!-- Open Graph / Social Sharing -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.h4ga.com/">
-  <meta property="og:title" content="H4 Global Advisors (H4GA) | Operationalize Innovation. Deliver at Scale.">
-  <meta property="og:description" content="Technology and operations advisory firm helping organizations operationalize AI and cloud strategies at enterprise scale.">
-  <meta property="og:image" content="https://www.h4ga.com/og-image.png">
-  <meta property="og:site_name" content="H4 Global Advisors">
-  <meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="H4 Global Advisors">
+<meta property="og:url" content="https://www.h4ga.com/">
+<meta property="og:title" content="H4 Global Advisors | AI that runs in production">
+<meta property="og:description" content="Advisory for mid-market leadership teams moving AI from pilots into production.">
+<meta property="og:image" content="https://www.h4ga.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="H4 Global Advisors (H4GA) | Operationalize Innovation. Deliver at Scale.">
-  <meta name="twitter:description" content="Technology and operations advisory firm helping organizations operationalize AI and cloud strategies at enterprise scale.">
-  <meta name="twitter:image" content="https://www.h4ga.com/og-image.png">
+<!-- Font loads without blocking first paint (addresses the mobile render-blocking issue) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap"></noscript>
 
-  <!-- Structured Data / JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ConsultingBusiness",
-    "name": "H4 Global Advisors",
-    "alternateName": "H4GA",
-    "url": "https://www.h4ga.com",
-    "email": "info@h4ga.com",
-    "description": "Technology and operations advisory firm helping organizations operationalize AI and cloud strategies at enterprise scale.",
-    "foundingDate": "2019",
-    "founder": {
-      "@type": "Person",
-      "name": "Jonathan Henry",
-      "jobTitle": "Founder & Chief Operating Officer"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "New York",
-      "addressRegion": "NY",
-      "addressCountry": "US"
-    },
-    "areaServed": "Global",
-    "knowsAbout": [
-      "Artificial Intelligence",
-      "Cloud Computing",
-      "Digital Transformation",
-      "Enterprise Operations",
-      "MLOps",
-      "Program Management",
-      "Portfolio Governance"
-    ],
-    "sameAs": [
-      "https://www.linkedin.com/company/h4ga/"
-    ]
-  }
-  </script>
+<!-- Google tag (gtag.js), deferred for performance -->
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WXREE7L3DS" onload="gtag('js', new Date());gtag('config', 'G-WXREE7L3DS');"></script>
+<link rel="icon" type="image/png" href="favicon-32x32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-  <!-- Calendly popup widget -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<style>
+:root{
+  --white:#ffffff;
+  --paper:#f4f5f7;
+  --rule:#d8dbe0;
+  --muted:#5a6170;
+  --ink:#0a1222;
+  --navy:#132f6a;
+  --navy-deep:#0b1f4a;
+  --max:1160px;
+  --gutter:clamp(20px,5vw,48px);
+  --font:"Geist","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--white);color:var(--ink);font-family:var(--font);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--navy);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:16px;top:16px;background:var(--ink);color:#fff;padding:8px 12px;z-index:10}
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Instrument+Serif:ital@0;1&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Instrument+Serif:ital@0;1&display=swap"></noscript>
-  <style>
-    /* Critical font fallbacks to prevent layout shift and render-blocking */
-    @font-face {
-      font-family: 'DM Sans Fallback';
-      src: local('Arial'), local('Helvetica'), local('-apple-system');
-      size-adjust: 100%;
-      font-display: optional;
-    }
-    @font-face {
-      font-family: 'Instrument Serif Fallback';
-      src: local('Georgia'), local('Times New Roman');
-      size-adjust: 100%;
-      font-display: optional;
-    }
-  </style>
-  <style>:root{--ink:#0a0a0a;--paper:#f8f7f4;--paper-alt:#efece7;--stone:#e8e6e1;--muted:#6b6660;--accent:#2a2a2a;--accent-light:#4a4a4a;--serif:'Instrument Serif',Georgia,serif;--sans:'DM Sans',-apple-system,sans-serif}*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;font-size:16px}body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}::selection{background:var(--accent);color:var(--paper)}.skip-link{position:absolute;top:-100%;left:1rem;background:var(--ink);color:var(--paper);padding:0.75rem 1.5rem;z-index:999;font-size:0.85rem;text-decoration:none;border-radius:0 0 4px 4px}.skip-link:focus{top:0}*:focus-visible{outline:2px solid var(--ink);outline-offset:3px}.cta-section *:focus-visible{outline-color:var(--paper)}footer *:focus-visible{outline-color:var(--paper)}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}html{scroll-behavior:auto}.reveal{opacity:1;transform:none}}nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(248,247,244,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid transparent;transition:border-color 0.4s ease}nav.scrolled{border-bottom-color:var(--stone)}.nav-logo{display:flex;align-items:center;text-decoration:none}.nav-logo img{height:36px;width:auto}.nav-links{display:flex;gap:2.5rem;list-style:none}.nav-links a{font-size:0.8rem;font-weight:400;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color 0.3s ease;position:relative}.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--accent);transition:width 0.3s ease}.nav-links a:hover{color:var(--ink)}.nav-links a:hover::after{width:100%}.nav-cta{font-size:0.8rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--paper) !important;background:var(--ink);padding:0.65rem 1.5rem;text-decoration:none;transition:background 0.3s ease}.nav-cta:hover{background:var(--accent)}.nav-cta::after{display:none !important}.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:8rem 3rem 4rem;position:relative;gap:3rem;overflow:hidden}.hero-content{max-width:600px}.hero-tag{font-size:0.75rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:2rem;opacity:0;animation:fadeUp 0.8s ease forwards;animation-delay:0.2s}.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,4.5vw,4rem);line-height:1.1;letter-spacing:-0.02em;color:var(--ink);margin-bottom:2rem;opacity:0;animation:fadeUp 0.8s ease forwards;animation-delay:0.4s}.hero h1 em{font-style:italic;color:var(--ink)}.hero-sub{font-size:1.05rem;font-weight:300;line-height:1.7;color:var(--muted);max-width:520px;margin-bottom:3rem;opacity:0;animation:fadeUp 0.8s ease forwards;animation-delay:0.6s}.hero-cta-row{display:flex;gap:1.5rem;align-items:center;opacity:0;animation:fadeUp 0.8s ease forwards;animation-delay:0.8s}.hero-visual{position:relative;width:100%;height:480px;display:flex;align-items:center;justify-content:center;opacity:0;animation:fadeUp 1s ease forwards;animation-delay:0.6s}.grid-container{position:relative;width:100%;height:100%}.grid-cell{position:absolute;border:1px solid var(--stone);border-radius:2px;transition:all 1.2s ease;opacity:0;animation:cellFade 0.8s ease forwards}.grid-cell.active{background:rgba(10,10,10,0.08);border-color:rgba(10,10,10,0.15)}.grid-cell.pulse{background:rgba(10,10,10,0.04);border-color:rgba(10,10,10,0.1)}.grid-label{position:absolute;font-size:0.6rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);opacity:0;animation:fadeUp 0.8s ease forwards}@keyframes cellFade{from{opacity:0;transform:scale(0.8)}to{opacity:1;transform:scale(1)}}@keyframes pulseGlow{0%,100%{opacity:0.15}50%{opacity:0.5}}.btn-primary{display:inline-block;font-family:var(--sans);font-size:0.8rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--paper);background:var(--ink);padding:1rem 2.2rem;text-decoration:none;transition:all 0.3s ease}.btn-primary:hover{background:var(--accent)}.btn-secondary{display:inline-block;font-family:var(--sans);font-size:0.8rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);text-decoration:none;padding:1rem 0;border-bottom:1px solid var(--ink);transition:all 0.3s ease}.btn-secondary:hover{color:var(--accent);border-color:var(--accent)}.hero-line{position:absolute;bottom:3rem;left:3rem;right:3rem;height:1px;background:var(--stone)}.scroll-indicator{position:absolute;bottom:3rem;right:3rem;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);writing-mode:vertical-rl;animation:float 2.5s ease-in-out infinite}section{padding:7rem 3rem}.section-label{font-size:0.7rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem}.section-title{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,3.5vw,3rem);line-height:1.15;letter-spacing:-0.015em;margin-bottom:1.5rem}.section-desc{font-size:1.05rem;font-weight:300;line-height:1.75;color:var(--muted);max-width:640px}.about{background:var(--paper-alt)}.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;max-width:1200px;margin-top:3rem;align-items:stretch}.about-left .section-desc{margin-bottom:2rem}.about-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem;margin-top:3rem}.stat{border-top:1px solid var(--stone);padding-top:1.2rem}.stat-number{font-family:var(--serif);font-size:2.4rem;color:var(--accent);line-height:1;margin-bottom:0.4rem}.stat-label{font-size:0.78rem;font-weight:400;color:var(--muted);letter-spacing:0.03em}.about-right{display:flex;flex-direction:column}.philosophy-card{background:transparent;color:var(--ink);padding:0 0 0 2rem;position:relative;flex:1;display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--muted)}.philosophy-card .quote{font-family:var(--serif);font-size:1.5rem;font-style:italic;line-height:1.55;color:var(--ink);margin-bottom:1.5rem}.philosophy-card .quote-attribution{font-family:var(--sans);font-size:0.78rem;font-weight:400;letter-spacing:0.06em;color:var(--muted);margin-top:1.5rem;background:transparent;padding:0;border:none}.philosophy-card::before{display:none}.philosophy-card::after{display:none}.philosophy-card .attribution{display:none}.services{background:var(--paper)}.services-header{max-width:640px;margin-bottom:4rem}.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--stone);border-left:1px solid var(--stone)}.service-card{padding:2.5rem;border-right:1px solid var(--stone);border-bottom:1px solid var(--stone);transition:background 0.4s ease;position:relative}.service-card:hover{background:var(--paper-alt)}.service-number{font-family:var(--serif);font-size:2rem;color:var(--stone);margin-bottom:1.5rem;transition:color 0.3s ease}.service-card:hover .service-number{color:var(--accent)}.service-card h3{font-family:var(--serif);font-weight:400;font-size:1.35rem;margin-bottom:1rem;line-height:1.25}.service-card p{font-size:0.9rem;font-weight:300;line-height:1.7;color:var(--muted)}.industries{background:var(--paper-alt)}.industries .section-label{color:var(--muted)}.industries .section-title{color:var(--ink)}.industries .section-desc{color:var(--muted)}.industry-list{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:4rem;border-top:1px solid var(--stone)}.industry-item{padding:2.5rem 2rem;border-right:1px solid var(--stone);border-bottom:1px solid var(--stone);transition:background 0.3s ease}.industry-item:nth-child(4n){border-right:none}.industry-item:hover{background:var(--paper)}.industry-icon{font-size:1rem;opacity:0.5;display:inline;margin-right:0.5rem}.industry-item h4{font-family:var(--serif);font-weight:400;font-size:1.15rem;margin-bottom:0.6rem;display:inline}.industry-title-row{margin-bottom:0.6rem}.industry-item p{font-size:0.82rem;font-weight:300;line-height:1.65;color:var(--muted)}.approach{background:var(--paper)}.approach-intro{max-width:640px;margin-bottom:4rem}.approach-intro .section-desc{margin-top:1.5rem}.approach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3rem;margin-top:0}.approach-step{padding:0;transition:opacity 0.3s ease}.approach-step:hover{opacity:0.7}.step-num{font-family:var(--serif);font-size:1.15rem;color:var(--muted);display:inline;margin-right:0.5rem}.step-body h4{font-family:var(--serif);font-weight:400;font-size:1.2rem;margin-bottom:0.8rem;line-height:1.25;display:inline}.step-title-row{margin-bottom:0.8rem}.step-body p{font-size:0.85rem;font-weight:300;line-height:1.7;color:var(--muted)}.approach-steps{display:contents}.leadership{background:var(--paper-alt)}.leadership-header{margin-bottom:3rem}.leadership-card{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:0;max-width:none;align-items:start}.leader-left{display:flex;flex-direction:column;padding-top:0}.leader-info{display:flex;flex-direction:column}.leader-info .section-label{margin-bottom:1rem}.leader-name{font-family:var(--serif);font-size:2.6rem;margin-bottom:0.4rem;line-height:1.1}.leader-title{font-size:0.85rem;font-weight:400;color:var(--muted);margin-bottom:0;letter-spacing:0.02em}.leader-right{display:flex;flex-direction:column;padding-top:0}.leader-bio{font-size:0.95rem;font-weight:300;line-height:1.75;color:var(--muted);margin-bottom:2rem}.leader-highlights{display:flex;gap:2.5rem;padding-top:1.5rem;border-top:1px solid var(--stone)}.highlight{text-align:left}.highlight-num{font-family:var(--serif);font-size:1.6rem;color:var(--accent);margin-bottom:0.2rem}.highlight-label{font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)}.cta-section{background:var(--ink);color:var(--paper);text-align:center;padding:5rem 3rem;position:relative;overflow:hidden}.cta-section::before{content:'';position:absolute;top:-50%;left:-25%;width:150%;height:200%;background:radial-gradient(ellipse at center,rgba(255,255,255,0.03) 0%,transparent 70%)}.cta-section .section-label{color:rgba(248,247,244,0.5);margin-bottom:1.2rem}.cta-title{font-family:var(--serif);font-size:clamp(2rem,3.5vw,2.8rem);font-weight:400;line-height:1.2;margin-bottom:1.2rem;position:relative}.cta-desc{font-size:1rem;font-weight:300;line-height:1.7;color:rgba(248,247,244,0.6);max-width:480px;margin:0 auto 2.5rem;position:relative}.btn-white{display:inline-block;font-family:var(--sans);font-size:0.8rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);background:var(--paper);padding:1rem 2.5rem;text-decoration:none;transition:all 0.3s ease;position:relative}.btn-white:hover{background:white;transform:translateY(-1px)}footer{background:var(--ink);color:var(--paper);padding:3rem 3rem 1.5rem;border-top:1px solid rgba(248,247,244,0.08)}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2rem;margin-bottom:2.5rem}.footer-brand .nav-logo{display:inline-block;margin-bottom:1rem}.footer-brand .nav-logo img{height:32px;width:auto;filter:brightness(0) invert(1)}.footer-brand p{font-size:0.85rem;font-weight:300;line-height:1.65;color:rgba(248,247,244,0.4);max-width:280px}.footer-col h5{font-size:0.72rem;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:rgba(248,247,244,0.35);margin-bottom:0.8rem}.footer-col a{display:block;font-size:0.88rem;font-weight:300;color:rgba(248,247,244,0.65);text-decoration:none;margin-bottom:0.7rem;transition:color 0.3s ease}.footer-col a:hover{color:var(--paper)}.footer-bottom{border-top:1px solid rgba(248,247,244,0.1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center}.footer-bottom p{font-size:0.75rem;color:rgba(248,247,244,0.3)}.footer-social{display:flex;gap:1.5rem}.footer-social a{font-size:0.75rem;color:rgba(248,247,244,0.3);text-decoration:none;letter-spacing:0.05em;transition:color 0.3s ease}.footer-social a:hover{color:var(--paper)}@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease}.reveal.visible{opacity:1;transform:translateY(0)}.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:0.5rem}.nav-toggle span{display:block;width:22px;height:1.5px;background:var(--ink);margin:5px 0;transition:all 0.3s ease}@media (max-width:1024px){.about-grid{grid-template-columns:1fr;gap:3rem}.leadership-card{grid-template-columns:1fr;gap:2.5rem}.approach-grid{grid-template-columns:1fr 1fr;gap:2rem}.services-grid{grid-template-columns:repeat(2,1fr)}.industry-list{grid-template-columns:repeat(2,1fr)}.industry-item:nth-child(2n){border-right:none}.footer-grid{grid-template-columns:1fr 1fr}.hero{padding:8rem 2.5rem 4rem}section{padding:5rem 2.5rem}}@media (max-width:768px){nav{padding:1.2rem 1.5rem}.nav-links{display:flex;position:fixed;top:0;left:0;width:100%;height:100%;background:var(--ink);flex-direction:column;align-items:center;justify-content:center;gap:2rem;z-index:200;padding:5rem 2rem 3rem;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity 0.3s ease}.nav-links.open{opacity:1;pointer-events:auto}.nav-links li{list-style:none;text-align:center;opacity:0;transform:translateY(10px);transition:opacity 0.3s ease,transform 0.3s ease}.nav-links.open li{opacity:1;transform:translateY(0)}.nav-links.open li:nth-child(1){transition-delay:0.05s}.nav-links.open li:nth-child(2){transition-delay:0.1s}.nav-links.open li:nth-child(3){transition-delay:0.15s}.nav-links.open li:nth-child(4){transition-delay:0.2s}.nav-links.open li:nth-child(5){transition-delay:0.25s}.nav-links.open li:nth-child(6){transition-delay:0.3s}.nav-links a{font-size:1.25rem;letter-spacing:0.04em;color:var(--paper);display:block;padding:0.5rem 0}.nav-links a::after{display:none}.nav-cta{margin-top:1rem;padding:0.85rem 2.5rem !important;font-size:0.85rem !important;display:inline-block !important;color:var(--ink) !important;background:var(--paper) !important}.nav-toggle{display:block;z-index:300;position:relative}.nav-toggle.active span{background:var(--paper)}.nav-toggle.active span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}.nav-toggle.active span:nth-child(2){opacity:0}.nav-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}nav.menu-open{background:var(--ink);border-bottom-color:transparent}section{padding:3.5rem 1.5rem}.section-title{font-size:1.75rem}.section-title br{display:none}.section-desc{font-size:0.95rem}.hero{padding:6.5rem 1.5rem 3rem;grid-template-columns:1fr;min-height:auto;gap:0}.hero-visual{display:none}.hero h1{font-size:2.2rem;margin-bottom:1.5rem}.hero-tag{margin-bottom:1.5rem}.hero-sub{font-size:0.95rem;margin-bottom:2rem}.hero-cta-row{flex-direction:column;align-items:stretch;gap:0.75rem}.hero-cta-row .btn-primary,.hero-cta-row .btn-secondary{text-align:center;width:100%}.scroll-indicator{display:none}.about-grid{grid-template-columns:1fr;gap:2.5rem}.about-stats{grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-top:2rem}.stat-number{font-size:1.8rem}.stat-label{font-size:0.7rem}.philosophy-card{padding-left:1.5rem}.philosophy-card .quote{font-size:1.2rem}.services-grid{grid-template-columns:1fr}.service-card{padding:2rem 0}.industry-list{grid-template-columns:1fr;margin-top:2.5rem}.industry-item{border-right:none !important;padding:2rem 0}.approach-grid{grid-template-columns:1fr 1fr;gap:1.5rem}.approach-intro{margin-bottom:2.5rem}.leadership-card{grid-template-columns:1fr;gap:2rem}.leader-name{font-size:2rem}.leader-bio{font-size:0.9rem}.leader-highlights{flex-wrap:wrap;gap:1.5rem}.highlight-num{font-size:1.4rem}.cta-section{padding:3.5rem 1.5rem}.cta-title{font-size:1.75rem}.cta-title br{display:none}.cta-desc{font-size:0.9rem}footer{padding:2.5rem 1.5rem 1.5rem}.footer-grid{grid-template-columns:1fr;gap:2rem}.footer-brand p{max-width:none}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}.footer-bottom div{display:flex;gap:1.5rem;justify-content:center}}@media (max-width:480px){nav{padding:1rem}.nav-logo img{height:28px}section{padding:3rem 1rem}.hero{padding:6rem 1rem 2.5rem}.hero h1{font-size:1.8rem}.hero-sub{font-size:0.9rem}.section-title{font-size:1.5rem}.about-stats{grid-template-columns:1fr;gap:1.2rem}.stat{display:flex;align-items:baseline;gap:1rem;padding-top:1rem}.stat-number{font-size:1.6rem;min-width:50px;margin-bottom:0}.philosophy-card .quote{font-size:1.1rem}.approach-grid{grid-template-columns:1fr;gap:2rem}.leader-name{font-size:1.7rem}.highlight-num{font-size:1.2rem}.highlight-label{font-size:0.65rem}.cta-section{padding:3rem 1rem}.cta-title{font-size:1.5rem}.btn-white{padding:0.85rem 2rem;font-size:0.75rem}footer{padding:2rem 1rem 1.5rem}}</style>
+/* Header */
+.site-header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.94);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--rule)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center}
+.brand img{height:34px;width:auto;display:block}
+nav ul{list-style:none;display:flex;gap:28px;align-items:center}
+nav a{text-decoration:none;font-size:.9375rem;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+nav a.nav-cta{color:var(--navy);font-weight:500}
+@media (max-width:760px){
+  .brand img{height:30px}
+  nav li:not(:last-child){display:none}
+}
+
+/* Buttons */
+.btn{display:inline-block;text-decoration:none;font-weight:500;font-size:1rem;padding:14px 24px;border-radius:2px;transition:background-color .15s}
+.btn-primary{background:var(--navy);color:#fff}
+.btn-primary:hover{background:var(--navy-deep)}
+.btn-text{color:var(--ink);padding:0 0 2px;border-bottom:1px solid var(--ink);border-radius:0}
+.btn-text:hover{color:var(--navy);border-color:var(--navy)}
+
+/* Hero */
+.hero{padding:clamp(72px,12vw,148px) 0 clamp(64px,9vw,112px)}
+.hero h1{font-size:clamp(2.75rem,7.4vw,5.75rem);line-height:.98;letter-spacing:-.045em;font-weight:600;max-width:12ch}
+.hero p{margin-top:32px;max-width:56ch;font-size:clamp(1.0625rem,1.6vw,1.25rem);color:var(--muted)}
+.hero .actions{margin-top:40px;display:flex;flex-wrap:wrap;gap:20px 32px;align-items:center}
+
+/* Section scaffold */
+section{scroll-margin-top:80px}
+.band{background:var(--paper)}
+.block{padding-top:clamp(72px,10vw,120px);padding-bottom:clamp(72px,10vw,120px)}
+.split{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:32px 64px}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+h2{font-size:clamp(1.875rem,3.4vw,2.75rem);line-height:1.08;letter-spacing:-.03em;font-weight:600;max-width:18ch}
+.lede{margin-top:20px;color:var(--muted);max-width:44ch}
+h3{font-size:1.25rem;letter-spacing:-.015em;font-weight:600;line-height:1.3}
+
+/* Problem statement */
+.statement{font-size:clamp(1.5rem,2.8vw,2.25rem);line-height:1.25;letter-spacing:-.025em;font-weight:500;max-width:30ch}
+.statement-body{margin-top:28px;max-width:60ch;color:var(--muted)}
+
+/* Services */
+.services{list-style:none;border-top:1px solid var(--ink)}
+.services li{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:12px 40px;padding:32px 0;border-bottom:1px solid var(--rule)}
+.services p{color:var(--muted)}
+@media (max-width:640px){.services li{grid-template-columns:1fr}}
+
+/* Approach: pilot-to-production track */
+.track{margin-top:56px}
+.track-ends{display:flex;justify-content:space-between;font-size:.875rem;color:var(--muted);margin-bottom:14px}
+.track-ends strong{color:var(--navy);font-weight:600}
+.track ol{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--ink);counter-reset:step}
+.track li{position:relative;padding:28px 28px 0 0;counter-increment:step}
+.track li::before{content:"";position:absolute;top:-8px;left:0;width:14px;height:14px;border-radius:50%;background:var(--paper);border:2px solid var(--ink)}
+.track li:last-child::before{background:var(--navy);border-color:var(--navy)}
+.track .n{display:block;font-size:.875rem;color:var(--muted);margin-bottom:6px;font-variant-numeric:tabular-nums}
+.track .n::before{content:counter(step)}
+.track p{margin-top:10px;color:var(--muted);font-size:1rem}
+@media (max-width:860px){
+  .track ol{grid-template-columns:1fr;border-top:0;border-left:2px solid var(--ink);margin-left:6px}
+  .track li{padding:0 0 36px 32px}
+  .track li::before{top:4px;left:-8px}
+  .track-ends{display:none}
+}
+
+/* Results */
+.results-head{margin-bottom:48px;align-items:end}
+.results-head .lede{margin-top:0}
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink)}
+.result{padding:32px 32px 8px 0}
+.result + .result{padding-left:32px;border-left:1px solid var(--rule)}
+.result .context{font-size:.9375rem;color:var(--muted)}
+.result .outcome{margin-top:14px;font-size:1.375rem;line-height:1.3;letter-spacing:-.02em;font-weight:500}
+.result .how{margin-top:14px;color:var(--muted);font-size:1rem}
+@media (max-width:860px){
+  .results{grid-template-columns:1fr}
+  .result,.result + .result{padding:28px 0;border-left:0;border-bottom:1px solid var(--rule)}
+}
+
+/* About */
+.about-body{max-width:62ch}
+.about-name{font-size:1.5rem;font-weight:600;letter-spacing:-.02em}
+.about-title{color:var(--muted);margin-top:4px}
+.about-copy{margin-top:28px}
+.about-copy p + p{margin-top:18px}
+.facts{list-style:none;margin-top:36px;border-top:1px solid var(--rule)}
+.facts li{display:flex;gap:24px;padding:14px 0;border-bottom:1px solid var(--rule);font-size:1rem}
+.facts span{color:var(--muted);min-width:110px;flex-shrink:0}
+
+/* Contact */
+.contact{background:var(--ink);color:#fff}
+.contact h2{max-width:20ch}
+.contact .lede{color:#aab2c2}
+.contact .btn-primary{background:#fff;color:var(--ink)}
+.contact .btn-primary:hover{background:#dfe5f0}
+.contact .actions{margin-top:40px;display:flex;flex-wrap:wrap;gap:20px 32px;align-items:center}
+.contact .meta a{color:#aab2c2;font-size:.9375rem}
+.contact .meta a:hover{color:#fff}
+
+/* Footer */
+footer{background:var(--ink);color:#8d96a8;font-size:.875rem;border-top:1px solid #1f2a3e}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 24px;padding-top:32px;padding-bottom:32px}
+.foot-brand{display:flex;align-items:center;gap:20px}
+.foot-brand img{height:28px;width:auto;display:block;filter:invert(1);opacity:.85}
+.foot-brand a:hover img{opacity:1}
+footer a{color:#8d96a8;text-decoration:none}
+footer a:hover{color:#fff}
+footer nav{display:flex;gap:24px}
+</style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"H4 Global Advisors","alternateName":"H4GA","url":"https://www.h4ga.com/","description":"Advisory for mid-market leadership teams moving AI from pilots into production.","areaServed":"US","founder":{"@type":"Person","name":"Jonathan Henry","jobTitle":"Founder & Principal Consultant","sameAs":["https://www.linkedin.com/in/jonathanhenry/"]},"email":"jonathan@h4ga.com","sameAs":["https://www.linkedin.com/company/h4ga/"]}
+</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to main content</a>
 
-  <a href="#main" class="skip-link">Skip to main content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="logo.png" width="400" height="171" alt="H4 Global Advisors" fetchpriority="high"></a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#results">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a class="nav-cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <!-- ════════ NAV ════════ -->
-  <nav id="nav" aria-label="Main navigation">
-    <a href="/" class="nav-logo"><img width="400" height="171" loading="eager" decoding="async" fetchpriority="high" src="logo.png" alt="H4 Global Advisors"></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="industries.html">Industries</a></li>
-      <li><a href="approach.html">Approach</a></li>
-      <li><a href="leadership.html">Leadership</a></li>
-      <li><a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/h4ga'});return false;" class="nav-cta">Get in Touch</a></li>
-    </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+<main id="main">
 
-  <!-- ════════ HERO ════════ -->
-  <main id="main">
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <p class="hero-tag">Technology &amp; Operations Advisory</p>
-      <h1>Operationalize <em>innovation.</em><br>Deliver at scale.</h1>
-      <p class="hero-sub">H4 Global Advisors (H4GA) helps global enterprises bridge the gap between technology strategy and high-velocity execution, turning AI, cloud, and digital platform investments into sustained, measurable business impact.</p>
-      <div class="hero-cta-row">
-        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/h4ga'});return false;" class="btn-primary">Start a Conversation</a>
-        <a href="services.html" class="btn-secondary">Explore Our Services</a>
+  <section class="hero">
+    <div class="wrap">
+      <h1>AI that runs in production, not in pilots.</h1>
+      <p>H4 Global Advisors helps mid-market leadership teams turn AI ambition into working operations: the right use cases, the operating model to run them, and the delivery leadership to get them live.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:jonathan@h4ga.com?subject=H4GA%20inquiry">Email us</a>
+        <a class="btn btn-text" href="#approach">See how we work</a>
       </div>
-    </div>
-    <div class="hero-visual" aria-hidden="true">
-      <div class="grid-container" id="heroGrid"></div>
     </div>
   </section>
 
-  <!-- ════════ ABOUT ════════ -->
-  <section class="about" id="about">
-    <div class="reveal">
-      <p class="section-label">About the Firm</p>
-      <h2 class="section-title">The operational connective tissue <br>between strategy and execution</h2>
+  <section class="band" aria-labelledby="problem-h">
+    <div class="wrap block">
+      <h2 id="problem-h" class="statement">Most companies have tried AI. Far fewer have it running part of the business.</h2>
+      <p class="statement-body">The gap is rarely the technology. It is ownership, priorities, data, process change, and someone accountable for getting it over the line. Mid-market teams feel this most: the ambition matches the enterprise, but without a dedicated transformation office to carry it. That is the gap we fill.</p>
     </div>
-    <div class="about-grid">
-      <div class="about-left reveal">
-        <p class="section-desc">H4 Global Advisors is a technology and operations advisory firm focused on helping organizations operationalize AI and cloud strategies at enterprise scale.</p>
-        <p class="section-desc">We don't just launch programs. We design operating models, governance frameworks, and delivery engines that sustain growth and maximize return on investment across complex technology portfolios.</p>
-        <div class="about-stats">
-          <div class="stat">
-            <div class="stat-number">4</div>
-            <div class="stat-label">Core Industry Verticals</div>
+  </section>
+
+  <section id="services" aria-labelledby="services-h">
+    <div class="wrap block">
+      <div class="split">
+        <div>
+          <h2 id="services-h">What we do</h2>
+          <p class="lede">Three ways we work with leadership teams, on their own or together.</p>
+        </div>
+        <ul class="services">
+          <li>
+            <h3>AI readiness and roadmap</h3>
+            <p>Find where AI will actually pay off in your business, rank the use cases by value and effort, and build a plan and business case your leadership team can commit to.</p>
+          </li>
+          <li>
+            <h3>Operating model and governance</h3>
+            <p>Set ownership, decision rights, guardrails for responsible use, and the measures that show whether AI is delivering. The structure that keeps it working after launch.</p>
+          </li>
+          <li>
+            <h3>Delivery leadership</h3>
+            <p>We stand up and run the program alongside your team: vendors, priorities, milestones, and adoption, until the capability is live and owned internally.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" class="band" aria-labelledby="approach-h">
+    <div class="wrap block">
+      <h2 id="approach-h">How an engagement runs</h2>
+      <p class="lede">Every engagement moves in one direction: from a promising idea to something your team runs without us.</p>
+      <div class="track">
+        <div class="track-ends" aria-hidden="true"><span>Pilot</span><strong>Production</strong></div>
+        <ol>
+          <li><span class="n"></span><h3>Assess</h3><p>Understand your goals, data, systems, and team readiness. Agree on where to start.</p></li>
+          <li><span class="n"></span><h3>Design</h3><p>Shape the use cases, operating model, and success measures around how your business actually works.</p></li>
+          <li><span class="n"></span><h3>Deliver</h3><p>Lead execution with your team and vendors, with clear milestones and regular leadership reviews.</p></li>
+          <li><span class="n"></span><h3>Hand off</h3><p>Transfer ownership, documentation, and know-how so the capability keeps running and improving.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="results" aria-labelledby="results-h">
+    <div class="wrap block">
+      <div class="split results-head">
+        <h2 id="results-h">Selected work</h2>
+        <p class="lede">From Jonathan's enterprise and advisory work over the past decade. Organization names withheld.</p>
+      </div>
+      <div class="results">
+        <article class="result">
+          <p class="context">Education and assessment, nonprofit</p>
+          <p class="outcome">Leading technology program delivery for a global education and assessment organization.</p>
+          <p class="how">Embedded with leadership to set priorities, align cross-functional teams, and keep delivery moving against clear milestones.</p>
+        </article>
+        <article class="result">
+          <p class="context">Global technology platform company</p>
+          <p class="outcome">Drove a cross-functional technical program from planning through delivery.</p>
+          <p class="how">Technical program leadership across engineering, product, and partner teams, with structured planning, risk management, and executive updates.</p>
+        </article>
+        <article class="result">
+          <p class="context">Enterprise technology company</p>
+          <p class="outcome">Built the global PMO that ran an AI and hybrid cloud portfolio as one governed program.</p>
+          <p class="how">Designed portfolio governance, OKR alignment, and executive reporting so AI and cloud initiatives moved from roadmap to delivery across global, cross-functional teams.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="about" class="band" aria-labelledby="about-h">
+    <div class="wrap block">
+      <div class="split">
+        <h2 id="about-h">About</h2>
+        <div class="about-body">
+          <p class="about-name"><a href="https://www.linkedin.com/in/jonathanhenry/" style="text-decoration:none">Jonathan Henry</a></p>
+          <p class="about-title">Founder &amp; Principal Consultant</p>
+          <div class="about-copy">
+            <p>Jonathan has spent more than 20 years leading large technology programs and transformations across cloud, AI, and digital platforms. He founded H4 Global Advisors to bring that experience to mid-market companies that want results from AI without building a transformation office to get there.</p>
+            <p>Clients work with him directly, from the first conversation through delivery.</p>
           </div>
-          <div class="stat">
-            <div class="stat-number">20+</div>
-            <div class="stat-label">Years of Advisory Engagements</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">NYC</div>
-            <div class="stat-label">Headquartered</div>
-          </div>
-        </div>
-      </div>
-      <div class="about-right reveal">
-        <blockquote class="philosophy-card">
-          <p class="quote">Impact over activity. We don't measure success by the number of initiatives launched. We measure it by the business outcomes delivered.</p>
-          <footer class="quote-attribution">Jonathan Henry, Founder</footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ SERVICES ════════ -->
-  <section class="services" id="services">
-    <div class="services-header reveal">
-      <p class="section-label">What We Do</p>
-      <h2 class="section-title">Capabilities built for complex, multi-year transformation</h2>
-      <p class="section-desc">We partner with C-suite and senior leadership teams to translate technology strategy into execution: designing structures that scale and sustain.</p>
-    </div>
-    <div class="services-grid reveal">
-      <div class="service-card">
-        <h3>AI &amp; Cloud Transformation</h3>
-        <p>Enterprise AI and cloud transformation programs supporting platform modernization, MLOps operationalization, and data-driven decision-making across AWS, GCP, and Azure.</p>
-      </div>
-      <div class="service-card">
-        <h3>Operating Model Design</h3>
-        <p>Design and rollout of program and portfolio governance models aligned to business strategy and OKRs, building the infrastructure for scalable execution across clients, teams, and portfolios.</p>
-      </div>
-      <div class="service-card">
-        <h3>AI-Powered Capabilities</h3>
-        <p>Operationalization of AI-powered capabilities including intelligent automation, personalization engines, advanced analytics, and responsible AI frameworks that deliver measurable outcomes.</p>
-      </div>
-      <div class="service-card">
-        <h3>Enterprise PMO &amp; Portfolio Leadership</h3>
-        <p>Building and leading enterprise PMOs and portfolio management structures that align global, cross-functional teams with OKRs and measurable business outcomes.</p>
-      </div>
-      <div class="service-card">
-        <h3>Technology Investment Strategy</h3>
-        <p>Executive advisory on technology investment strategy, vendor alignment, and transformation roadmaps that ensure every dollar invested drives sustained business impact.</p>
-      </div>
-      <div class="service-card">
-        <h3>Digital Platform Modernization</h3>
-        <p>Navigating legacy environment modernization and cloud-native migrations to accelerate time-to-market, improve scalability, and future-proof technology ecosystems.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ INDUSTRIES ════════ -->
-  <section class="industries" id="industries">
-    <div class="reveal">
-      <p class="section-label">Industries We Serve</p>
-      <h2 class="section-title">Deep expertise across sectors <br>driving large-scale transformation</h2>
-      <p class="section-desc">We work with global enterprises, growth-stage companies, and transformation offices to improve delivery predictability and accelerate time-to-value.</p>
-    </div>
-    <div class="industry-list reveal">
-      <div class="industry-item">
-        <div class="industry-title-row"><span class="industry-icon" aria-hidden="true">◈</span><h4>Information Technology</h4></div>
-        <p>Platform modernization, cloud-native migration, and digital operating model design. Accelerated by AI and intelligent automation for enterprises navigating rapid scale.</p>
-      </div>
-      <div class="industry-item">
-        <div class="industry-title-row"><span class="industry-icon" aria-hidden="true">◇</span><h4>Telecommunications</h4></div>
-        <p>Operational excellence, cloud migration, and personalization programs for global carriers, underpinned by advanced analytics and AI-enabled decision-making.</p>
-      </div>
-      <div class="industry-item">
-        <div class="industry-title-row"><span class="industry-icon" aria-hidden="true">○</span><h4>Life Sciences</h4></div>
-        <p>AI enablement, data platform modernization, and regulatory-aligned governance for pharmaceutical and biotech organizations.</p>
-      </div>
-      <div class="industry-item">
-        <div class="industry-title-row"><span class="industry-icon" aria-hidden="true">△</span><h4>Advertising &amp; Media</h4></div>
-        <p>Next-generation audience and content strategies powered by intelligent automation, AI-driven personalization, and advanced analytics at scale.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════════ APPROACH ════════ -->
-  <section class="approach" id="approach">
-    <div class="approach-intro reveal">
-      <p class="section-label">Our Approach</p>
-      <h2 class="section-title">From strategy to sustained execution</h2>
-      <p class="section-desc">Our methodology centers on impact over activity. Every engagement is designed to move from strategic clarity to operational velocity, with governance, measurement, and accountability built in from day one.</p>
-    </div>
-    <div class="approach-grid reveal">
-      <div class="approach-step">
-        <div class="step-body">
-          <div class="step-title-row"><span class="step-num">01</span><h4>Assess &amp; Align</h4></div>
-          <p>We begin by understanding your technology landscape, organizational readiness, and strategic objectives to establish a shared foundation for transformation.</p>
-        </div>
-      </div>
-      <div class="approach-step">
-        <div class="step-body">
-          <div class="step-title-row"><span class="step-num">02</span><h4>Architect &amp; Design</h4></div>
-          <p>We design operating models, governance frameworks, and delivery engines tailored to your enterprise context, not off-the-shelf templates.</p>
-        </div>
-      </div>
-      <div class="approach-step">
-        <div class="step-body">
-          <div class="step-title-row"><span class="step-num">03</span><h4>Operationalize &amp; Execute</h4></div>
-          <p>We embed within your teams to activate programs, align cross-functional stakeholders, and drive execution with measurable milestones.</p>
-        </div>
-      </div>
-      <div class="approach-step">
-        <div class="step-body">
-          <div class="step-title-row"><span class="step-num">04</span><h4>Scale &amp; Sustain</h4></div>
-          <p>We build for longevity, ensuring your organization has the capability, processes, and muscle memory to sustain transformation independently.</p>
+          <ul class="facts">
+            <li><span>Focus</span>AI operationalization</li>
+            <li><span>Sectors</span>Technology, education, telecommunications, life sciences, advertising and media</li>
+            <li><span>Based in</span>New York Metro</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ════════ LEADERSHIP ════════ -->
-  <section class="leadership" id="leadership">
-    <div class="leadership-card reveal">
-      <div class="leader-left">
-        <p class="section-label">Leadership</p>
-        <!--<p class="section-label" style="margin-top: 2rem;">Founder &amp; COO</p>-->
-        <h3 class="leader-name">Jonathan Henry</h3>
-        <p class="leader-title">Founder &amp; Chief Operating Officer, H4 Global Advisors</p>
-      </div>
-      <div class="leader-right">
-        <p class="leader-bio">Strategic Technology and Operations Leader with over 20 years of experience architecting enterprise-scale transformations at the intersection of AI, cloud, and digital platforms. Jonathan specializes in building the operational connective tissue that enables global organizations to bridge the gap between high-level strategy and high-velocity execution.</p>
-        <div class="leader-highlights">
-          <div class="highlight">
-            <div class="highlight-num">20+</div>
-            <div class="highlight-label">Years Experience</div>
-          </div>
-          <div class="highlight">
-            <div class="highlight-num">C-Suite</div>
-            <div class="highlight-label">Advisory Level</div>
-          </div>
-          <div class="highlight">
-            <div class="highlight-num">Global</div>
-            <div class="highlight-label">Enterprise Reach</div>
-          </div>
-        </div>
+  <section id="contact" class="contact" aria-labelledby="contact-h">
+    <div class="wrap block">
+      <h2 id="contact-h">Have an AI initiative that needs to get to production?</h2>
+      <p class="lede">Tell us where things stand and what you want to get done.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:jonathan@h4ga.com?subject=H4GA%20inquiry">Email us</a>
+        <p class="meta"><a href="mailto:jonathan@h4ga.com">jonathan@h4ga.com</a></p>
+        <p class="meta"><a href="https://www.linkedin.com/in/jonathanhenry/">Jonathan on LinkedIn</a></p>
       </div>
     </div>
   </section>
 
-  <!-- ════════ CTA ════════ -->
-  <section class="cta-section" id="contact">
-    <p class="section-label">Ready to Begin?</p>
-    <h2 class="cta-title">Let's operationalize your <br>technology investment.</h2>
-    <p class="cta-desc">Whether you're navigating a complex transformation, scaling AI capabilities, or building a governance model that lasts, we're ready to partner.</p>
-    <a href="mailto:info@h4ga.com" class="btn-white">Contact Us</a>
-  </section>
-  </main>
+</main>
 
-  <!-- ════════ FOOTER ════════ -->
-  <footer role="contentinfo">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="/" class="nav-logo"><img width="400" height="171" loading="lazy" decoding="async" src="logo.png" alt="H4 Global Advisors"></a>
-        <p>Operationalize innovation. Deliver at scale. Lead with clarity.</p>
-      </div>
-      <div class="footer-col">
-        <h5>Services</h5>
-        <a href="services.html">AI &amp; Cloud Transformation</a>
-        <a href="services.html">Operating Model Design</a>
-        <a href="services.html">Enterprise PMO</a>
-        <a href="services.html">Investment Strategy</a>
-      </div>
-      <div class="footer-col">
-        <h5>Industries</h5>
-        <a href="industries.html">Information Technology</a>
-        <a href="industries.html">Telecommunications</a>
-        <a href="industries.html">Life Sciences</a>
-        <a href="industries.html">Advertising &amp; Media</a>
-      </div>
-      <div class="footer-col">
-        <h5>Connect</h5>
-        <a href="mailto:info@h4ga.com">Email Us</a>
-        <a href="https://www.linkedin.com/company/h4ga/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/h4ga'});return false;">Schedule a Call</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 H4 Global Advisors. All rights reserved.</p>
-      <div style="display:flex;gap:1.5rem;">
-        <a href="privacy-policy.html" style="font-size:0.75rem;color:rgba(248,247,244,0.3);text-decoration:none;">Privacy Policy</a>
-        <a href="terms-of-service.html" style="font-size:0.75rem;color:rgba(248,247,244,0.3);text-decoration:none;">Terms of Service</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // Wrap script in DOMContentLoaded for better performance
-    document.addEventListener('DOMContentLoaded', function() {
-    // Nav scroll effect
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 50);
-    });
-
-    // Mobile nav toggle
-    const toggle = document.getElementById('navToggle');
-    const links = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => {
-      const isOpen = links.classList.toggle('open');
-      toggle.classList.toggle('active', isOpen);
-      nav.classList.toggle('menu-open', isOpen);
-      toggle.setAttribute('aria-expanded', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    });
-    links.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        links.classList.remove('open');
-        toggle.classList.remove('active');
-        nav.classList.remove('menu-open');
-        toggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      });
-    });
-
-    // Scroll reveal
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.15 });
-    reveals.forEach(el => observer.observe(el));
-
-    // Hero animated grid - deferred for performance
-    (typeof requestIdleCallback === 'function' ? requestIdleCallback : setTimeout)(function() {
-    (function() {
-      const container = document.getElementById('heroGrid');
-      if (!container) return;
-
-      const cols = 10;
-      const rows = 10;
-      const cellSize = 42;
-      const gap = 4;
-      const cells = [];
-
-      const fragment = document.createDocumentFragment();
-      for (let r = 0; r < rows; r++) {
-        for (let c = 0; c < cols; c++) {
-          const cell = document.createElement('div');
-          cell.className = 'grid-cell';
-          cell.style.cssText = 'left:' + c * (cellSize + gap) + 'px;top:' + r * (cellSize + gap) + 'px;width:' + cellSize + 'px;height:' + cellSize + 'px;animation-delay:' + (r * 0.04 + c * 0.03) + 's';
-          fragment.appendChild(cell);
-          cells.push(cell);
-        }
-      }
-      container.style.willChange = 'transform';
-      container.appendChild(fragment);
-
-      // Animate cells
-      function animateCells() {
-        cells.forEach(cell => {
-          cell.classList.remove('active', 'pulse');
-          cell.style.animation = '';
-        });
-
-        // Gentle wave - fewer active cells
-        const activeCount = 5 + Math.floor(Math.random() * 4);
-        const startIdx = Math.floor(Math.random() * cells.length);
-
-        for (let i = 0; i < activeCount; i++) {
-          const idx = (startIdx + i * 7 + Math.floor(Math.random() * 10)) % cells.length;
-          setTimeout(() => {
-            cells[idx].classList.add('active');
-          }, i * 150);
-        }
-
-        // Soft pulse on a few cells
-        const pulseCount = 3 + Math.floor(Math.random() * 3);
-        for (let i = 0; i < pulseCount; i++) {
-          const idx = Math.floor(Math.random() * cells.length);
-          cells[idx].classList.add('pulse');
-          cells[idx].style.animation = `cellFade 0.8s ease forwards, pulseGlow ${3 + Math.random() * 3}s ease-in-out infinite`;
-          cells[idx].style.animationDelay = `${Math.random() * 0.8}s, ${Math.random() * 2}s`;
-        }
-      }
-
-      // Initial animation after cells appear
-      setTimeout(animateCells, 1500);
-      setInterval(animateCells, 6000);
-    })();
-    });  // End of requestIdleCallback/setTimeout wrapper
-    });  // End of DOMContentLoaded listener
-  </script>
+<footer>
+  <div class="wrap">
+    <div class="foot-brand"><a href="/" aria-label="H4 Global Advisors home"><img src="logo.png" width="400" height="171" alt="" loading="lazy"></a><span>&copy; 2026 H4 Global Advisors</span></div>
+    <nav aria-label="Legal">
+      <a href="https://www.linkedin.com/company/h4ga/">H4GA on LinkedIn</a>
+      <a href="/privacy-policy.html">Privacy</a>
+      <a href="/terms-of-service.html">Terms</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>

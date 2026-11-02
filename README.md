@@ -1,6 +1,6 @@
 # H4 Global Advisors
 
-Technology and operations advisory firm helping organizations operationalize AI and cloud strategies at enterprise scale.
+Advisory for mid-market leadership teams moving AI from pilots into production.
 
 **Website:** [www.h4ga.com](https://www.h4ga.com)
 
@@ -12,7 +12,8 @@ Static HTML, CSS, and vanilla JavaScript. No build tools or frameworks required.
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Main website |
+| `index.html` | Main website (single page: services, approach, about, contact) |
+| `about.html`, `services.html`, `industries.html`, `approach.html`, `leadership.html` | Redirects from the old section pages to the matching homepage section |
 | `privacy-policy.html` | Privacy Policy |
 | `terms-of-service.html` | Terms of Service |
 | `Logo_Transparency_1.png` | Company logo |
